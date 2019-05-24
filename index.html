@@ -47,6 +47,21 @@
         <!-- Event Modifiers -->
         <a v-on:click.prevent="click" href="https://www.google.com/">Google</a>
 
+
+
+        <h2>Keyboard Events</h2>
+
+        <label>Name: </label>
+        <input v-on:keyup.enter="logName" />
+
+
+
+        <label>Age: </label>
+        <input v-on:keyup.alt.enter="logAge" />
+
+
+
+
     </div>
 
 
