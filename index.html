@@ -28,7 +28,7 @@
 
         <h2>Events</h2>
 
-        <button @click="add(1)">Add a year</button>
+        <button @click.once="add(1)">Add a year</button>
         <button v-on:click="subtract(1)">Subtract a year</button>
 
 
@@ -43,6 +43,9 @@
             {{x}}, {{y}}
 
         </div>
+
+        <!-- Event Modifiers -->
+        <a v-on:click.prevent="click" href="https://www.google.com/">Google</a>
 
     </div>
 
