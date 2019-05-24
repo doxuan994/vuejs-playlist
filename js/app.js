@@ -1,13 +1,19 @@
 new Vue({
     el: "#vue-app",
     data: {
-        name: 'Shaun',
+        name: '',
         job: 'Ninja',
         website: 'https://www.google.com/',
         websiteTag: '<a href="https://www.google.com/">Google</a>',
-        age: 25,
+        age: 20,
         x: 0,
-        y: 0
+        y: 0,
+        a: 0,
+        b: 0,
+        available: false,
+        nearby: false
+
+
 
     },
     methods: {
@@ -35,10 +41,39 @@ new Vue({
 
         logName: function() {
             console.log('You entered your name');
+
+
         },
 
         logAge: function() {
             console.log('You entered your age');
+        },
+
+
+
+
+
+    },
+    computed: {
+
+        addToA: function() {
+            console.log('Add to A');
+            return this.a + this.age;
+        },
+
+
+        addToB: function() {
+            console.log('Add to B');
+            return this.b + this.age;
+        },
+
+        compClasses: function() {
+
+            return {
+                available: this.available,
+                nearby: this.nearby
+            }
+
         }
 
     }
