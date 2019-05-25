@@ -1,3 +1,37 @@
+new Vue({
+    el: '#vue-app',
+    data: {
+        output: 'Your fav food'
+    },
+    methods: {
+        readRefs: function() {
+            console.log(this.$refs.test.innerText);
+            this.output = this.$refs.input.value;
+        }
+
+    },
+    computed: {
+
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Vue.component('greeting', {
     template: '<p>Hey there, I am a {{name}}. <button v-on:click="changedName">Change name</button></p>',
     data: function() {
