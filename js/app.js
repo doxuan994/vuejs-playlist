@@ -1,7 +1,7 @@
 new Vue({
     el: "#vue-app",
     data: {
-        name: '',
+        name: 'Jack',
         job: 'Ninja',
         website: 'https://www.google.com/',
         websiteTag: '<a href="https://www.google.com/">Google</a>',
@@ -11,7 +11,16 @@ new Vue({
         a: 0,
         b: 0,
         available: false,
-        nearby: false
+        nearby: false,
+        error: false,
+        success: false,
+        characters: ['Mario', 'Luigi', 'Yoshi', 'Bowser'],
+        ninjas: [
+            { name: 'Ryo', age: 25 },
+            { name: 'Yoshi', age: 35 },
+            { name: 'Ken', age: 55 }
+        ]
+
 
 
 
