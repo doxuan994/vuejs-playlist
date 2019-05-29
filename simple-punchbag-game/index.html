@@ -21,16 +21,14 @@
 
         <!-- bag health -->
         <div id="bag-health">
-            <div v-bind:style="{width: health + '%'}">
-
-            </div>
+            <div v-bind:style="{width: health + '%', background: background}"></div>
         </div>
 
 
         <!-- game controls -->
         <div id="controls">
-            <button v-on:click="punch" v-show="!ended">Punch</button>
-            <button v-on:click="restart">Restart</button>
+            <button v-on:click="punch('music/PunchSoundEffect.mp3');" v-show="!ended">Punch</button>
+            <!-- <button v-on:click="restart">Restart</button> -->
         </div>
 
 
